@@ -82,6 +82,25 @@ div.carousel-slider__item img {
 #anchor_quanity {
 	display: none;
 }
+/* back to top */
+.back_to_top {
+	width: 60px;
+	height: 30px;
+	background-color: #c3c3c3;
+	color: white;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	text-align: center;
+}
+.back_to_top span {
+	width: 30px;
+	font-size: 12px;
+}
+.back_to_top:hover {
+	color: #fcfcfc;
+}
 </style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css%3Fver=5.9.3.css' type='text/css' media='all' />
 <style id='global-styles-inline-css' type='text/css'>
@@ -411,7 +430,7 @@ a.a_main:hover {
 </style>
 
 <section id="anchor_songs" class="anchor-quanity elementor-section elementor-top-section elementor-element elementor-element-33c4dab elementor-section-boxed elementor-section-height-default elementor-section-height-default">
-	<h3>Список</h3>
+	<h3 id="back_to_top_id">Список</h3>
 	<ul class="list_songs">
 		<li><a href="#lion">Лев, Слово Жизни</a></li>
 		<li><a href="#sing_sing">Будем петь петь</a></li>
@@ -428,6 +447,8 @@ a.a_main:hover {
 		<li><a href="#way_maker">Бог сильный</a></li>
 		<li><a href="#harvest">Жатвы много</a></li>
 		<li><a href="#call_me">Позови – я услышу</a></li>
+		<li><a href="#glina">Возьми меня как глину</a></li>
+		<li><a href="#who_i_am">Кто же я</a></li>
 		<li><a href="https://cloud.mail.ru/public/cWvS/9JdzzNEZa/Иисус%20скала" target="_blank">Иисус – скала(с движениями, облако)</a></li>
 	</ul>
 
@@ -1313,7 +1334,7 @@ A                                          E
 
 
 
-	<h3 class="heading_songs" id="whi_i_am">Кто же я</h3>
+	<h3 class="heading_songs" id="who_i_am">Кто же я</h3>
 
 	<pre class="text_songs">
 1 куплет:   
@@ -1612,6 +1633,7 @@ function viewDiv(){
   document.getElementById("anchor_quanity").style.display = "block";
 };
 </script>
+<a class="back_to_top" href="#back_to_top_id"><span>Наверх</span></a>
 </body>
 
 </html>

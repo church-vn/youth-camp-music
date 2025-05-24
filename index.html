@@ -54,10 +54,12 @@ div.carousel-slider__item img {
 }
 
 /* header background */
-@keyframes ani {
-	/*0%{background-position: 0 0;}
-	100%{background-position: -100vw 0;}*/
-}
+
+/*@keyframes ani {
+	0%{background-position: 0 0;}
+	100%{background-position: -100vw 0;}
+}*/
+
 /*.elementor-element-52aa052c .wp-block-cover.alignfull {
 	background: url(images/clouds.png) repeat-x 0 / 100% auto;
 	animation: ani 50s linear infinite ;
@@ -69,6 +71,7 @@ div.carousel-slider__item img {
 	border-bottom-left-radius: 40px !important;
 	border-bottom-right-radius: 40px !important;
 	background-size: cover !important;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7) !important;
 }
 .elementor-element-52aa052c .wp-block-cover.alignfull img {
 	display: none !important;
@@ -79,27 +82,25 @@ div.carousel-slider__item img {
 }
 
 /* расписание скрыто по умолчанию */
-#anchor_quanity {
+/*#anchor_quanity {
 	display: none;
+}*/
+@media screen and (max-width: 768px) {
+	#main_block_ {
+		padding-top: 60px !important;
+		padding-bottom: 60px !important;
+	}
 }
-/* back to top */
-.back_to_top {
-	width: 60px;
-	height: 30px;
-	background-color: #c3c3c3;
-	color: white;
-	border-radius: 5px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	text-align: center;
+#small_text {
+	position: absolute;
+	top: 34px;
+	left: 6%;
+	font-size:9px !important; 
+	line-height: 0; 
+	letter-spacing: 0px;
 }
-.back_to_top span {
-	width: 30px;
-	font-size: 12px;
-}
-.back_to_top:hover {
-	color: #fcfcfc;
+.parent_small_text {
+	position: relative;
 }
 </style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css%3Fver=5.9.3.css' type='text/css' media='all' />
@@ -351,7 +352,7 @@ a.a_main:hover {
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-92789a4" data-id="92789a4" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-52aa052c elementor-invisible elementor-widget elementor-widget-text-editor" data-id="52aa052c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+								<div class="elementor-element elementor-element-52aa052c elementor-invisible elementor-widget elementor-widget-text-editor" data-id="52aa052c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.6.5 - 27-04-2022 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<!-- wp:cover {"url":"http://localhost/site_youth_camp/wp-content/uploads/2020/07/web-design-studio-01.jpg.jpg","id":109,"dimRatio":0,"focalPoint":{"x":"0.50","y":"0.64"},"minHeight":700,"align":"full"} -->
@@ -430,7 +431,22 @@ a.a_main:hover {
 </style>
 
 <section id="anchor_songs" class="anchor-quanity elementor-section elementor-top-section elementor-element elementor-element-33c4dab elementor-section-boxed elementor-section-height-default elementor-section-height-default">
-	<h3 id="back_to_top_id">Список</h3>
+		
+<div style="margin: 0px 30px;">
+  <a
+    href="#"
+    class="dark-btn"
+  >
+    Смотреть Расписание
+    <small>
+      Посмотри расписание, чтобы знать,<br>
+      <b>когда твоя очеред прославлять!</b>
+    </small>
+  </a>
+</div>
+
+<br>
+	<h4 id="back_to_top_id">Список</h4>
 	<ul class="list_songs">
 		<li><a href="#lion">Лев, Слово Жизни</a></li>
 		<li><a href="#sing_sing">Будем петь петь</a></li>

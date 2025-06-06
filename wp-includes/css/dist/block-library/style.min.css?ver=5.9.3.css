@@ -109,6 +109,7 @@ a#button_registration {
   margin-left: 6px;
   display: inline-block;
   animation: pulse 1.2s infinite ease-in-out;
+  line-height: 24px;
 }
 
 @keyframes pulse {

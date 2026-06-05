@@ -1,0 +1,318 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:
+Inter,
+Segoe UI,
+sans-serif;
+
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+
+/* HERO */
+
+.hero{
+height:70vh;
+min-height:500px;
+
+background:url("https://church-vn.github.io/youth-camp-music/images/mountains3.jpg");
+background-size:cover;
+background-position:center;
+
+position:relative;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+border-radius:0 0 40px 40px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35);
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.35),
+rgba(0,0,0,.55)
+);
+
+border-radius:0 0 40px 40px;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+padding:20px;
+}
+
+.hero h1{
+font-size:clamp(2rem,6vw,5rem);
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:clamp(1rem,2vw,1.3rem);
+opacity:.9;
+margin-bottom:30px;
+}
+
+.hero-btn-wrap{
+display:flex;
+justify-content:center;
+}
+
+.hero-btn{
+display:inline-block;
+text-align:center;
+
+padding:16px 22px;
+border-radius:16px;
+
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+
+text-decoration:none;
+font-weight:600;
+
+box-shadow:0 12px 30px rgba(37,99,235,.35);
+
+transition:.25s ease;
+
+max-width:320px;
+}
+
+.hero-btn small{
+display:block;
+margin-top:6px;
+
+font-size:.78rem;
+font-weight:400;
+opacity:.85;
+line-height:1.3;
+}
+
+.hero-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 18px 40px rgba(37,99,235,.45);
+}
+
+.hero-btn:active{
+transform:translateY(0px);
+}
+
+
+/* MAIN */
+
+.container{
+width:min(1200px,95%);
+margin:auto;
+padding:40px 0;
+}
+
+
+/* MENU */
+
+.songs-menu{
+background:#111827;
+padding:30px;
+border-radius:20px;
+margin-bottom:40px;
+}
+
+.songs-menu h2{
+margin-bottom:25px;
+}
+
+.list_songs{
+list-style:none;
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:12px;
+}
+
+.list_songs li{
+background:#1e293b;
+padding:12px 15px;
+border-radius:12px;
+}
+
+.list_songs a{
+color:white;
+text-decoration:none;
+}
+
+.list_songs a:hover{
+color:#60a5fa;
+}
+
+
+/* BADGES */
+
+.multi-key-badge{
+margin-left:8px;
+
+background:#2563eb;
+
+padding:4px 8px;
+
+border-radius:999px;
+
+font-size:.75rem;
+font-weight:600;
+}
+
+.new-badge{
+margin-left:8px;
+
+background:#f59e0b;
+
+padding:4px 8px;
+
+border-radius:999px;
+
+font-size:.75rem;
+font-weight:600;
+}
+
+
+/* SONGS */
+
+.heading_songs{
+
+scroll-margin-top:100px;
+
+margin-top:60px;
+margin-bottom:15px;
+
+padding-bottom:10px;
+
+border-bottom:2px solid #334155;
+
+font-size:1.8rem;
+}
+
+.text_songs{
+white-space:pre-wrap;
+
+overflow-x:auto;
+
+background:#111827;
+
+padding:25px;
+
+border-radius:16px;
+
+font-size:1rem;
+
+line-height:1.7;
+}
+
+.song-description{
+display:block;
+
+margin-top:15px;
+
+padding:15px;
+
+background:#1e293b;
+
+border-left:4px solid #60a5fa;
+
+border-radius:10px;
+}
+
+hr{
+border:none;
+height:1px;
+background:#334155;
+margin:50px 0;
+}
+
+
+/* BACK BUTTON */
+
+#backToTop{
+
+position:fixed;
+
+right:20px;
+bottom:20px;
+
+width:55px;
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+color:white;
+
+font-size:24px;
+cursor:pointer;
+
+display:none;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.3);
+
+z-index:999;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+height:60vh;
+}
+
+.text_songs{
+font-size:.95rem;
+padding:18px;
+}
+}
+
+@media(max-width:768px){
+
+.hero{
+height:60vh;
+min-height:420px;
+}
+
+.container{
+width:100%;
+}
+
+.songs-menu{
+padding:20px 12px;
+border-radius:16px;
+}
+
+.text_songs{
+font-size:.95rem;
+padding:18px;
+}
+}

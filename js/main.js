@@ -19,3 +19,17 @@ btn.addEventListener('click', () => {
         });
 
 });
+
+document.querySelectorAll('.list_songs li').forEach(li => {
+
+    li.addEventListener('click', () => {
+
+        const link = li.querySelector('a');
+
+        if(link){
+            link.click();
+        }
+
+    });
+
+});
